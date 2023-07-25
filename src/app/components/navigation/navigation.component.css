@@ -1,0 +1,44 @@
+nav {
+  border-top: 4px double rgb(202, 196, 196);
+  position: sticky;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100vw;
+  padding-inline-start: 0px;
+  text-align: center;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li {
+  margin : 20px 80px;
+  text-shadow: 1px 1px 1px black;
+  font-size: 30px;
+  color:white;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: 1;
+}
+nav ul li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+ul > .liActive {
+  background-color: rgba(255, 248, 248, 0.15);
+}
+
+.logo {
+  background-image: url('../../../assets/logo.jpg');
+  background-size: contain;background-repeat: no-repeat;
+
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+<mat-grid-list cols="6" rowHeight="100px">
+
+  <mat-grid-tile  colspan="3" class="logo">
+
+  </mat-grid-tile>
+
+  <mat-grid-tile  colspan="3">
+    tak
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="6">
+    <nav>
+      <ul>
+        <li *ngFor="let navItem of navList"
+        [routerLinkActive]="'liActive'"
+        [routerLinkActiveOptions]="{exact:true}"
+        >
+          <a [routerLink]="navItem.url">
+            {{navItem.webLook}}
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </mat-grid-tile>
+</mat-grid-list>
+
+
+
+
+
+
