@@ -1,0 +1,26 @@
+mat-grid-list {
+  width: 100vw;
+}
+.logo {
+  background-image: url('../../../../assets/logo.jpg');
+  background-size: contain;background-repeat: no-repeat;
+  width: 70%;
+  height: 70%;
+  justify-content: center;
+  text-align: center;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 140px;
+  max-height: 140px;
+
+  transform: translateX(-30%);
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

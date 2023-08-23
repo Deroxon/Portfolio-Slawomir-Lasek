@@ -1,5 +1,6 @@
 nav {
   border-top: 4px double rgb(202, 196, 196);
+  width: 90%;
   position: sticky;
   z-index: 1000;
 }
@@ -36,9 +37,9 @@ ul > .liActive {
   background-color: rgba(255, 248, 248, 0.15);
 }
 
-.logo {
-  background-image: url('../../../assets/logo.jpg');
-  background-size: contain;background-repeat: no-repeat;
-
-  text-align: center;
+.container  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+

@@ -13,7 +13,11 @@ import { PriceListComponent } from './components/price-list/price-list.component
 import { AboutComponent } from './components/about/about.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ErrorComponent } from './components/error/error.component';
+import { UpNavComponent } from './components/navigation/up-nav/up-nav.component';
 
+
+import {MatIconModule} from '@angular/material/icon';
+import { ServiceService } from './services/service.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +28,7 @@ import { ErrorComponent } from './components/error/error.component';
     AppComponent,
     NavigationComponent,
     ErrorComponent,
+    UpNavComponent,
 
     // angular material
 
@@ -33,8 +38,9 @@ import { ErrorComponent } from './components/error/error.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatGridListModule,
+    MatIconModule,
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

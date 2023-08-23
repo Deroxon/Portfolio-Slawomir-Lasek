@@ -1,0 +1,19 @@
+
+
+<mat-grid-list cols="6">
+
+  <mat-grid-tile colspan="2" >
+    <div class="logo"></div>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="4">
+    <ul *ngFor="let liItem of upNavLi">
+      <li><mat-icon> {{liItem.icon}} </mat-icon>
+        {{liItem.text}} <br>
+        {{liItem.extraText ? liItem.extraText : ''}}
+      </li>
+
+    </ul>
+  </mat-grid-tile>
+
+</mat-grid-list>
